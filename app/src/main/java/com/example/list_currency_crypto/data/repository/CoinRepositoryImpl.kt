@@ -1,6 +1,6 @@
 package com.example.list_currency_crypto.data.repository
 
-import com.example.list_currency_crypto.data.remote.dto.CoinPaprikaApi
+import com.example.list_currency_crypto.data.remote.CoinPaprikaApi
 import com.example.list_currency_crypto.domain.repository.CoinRepository
 import com.example.list_currency_crypto.data.remote.dto.CoinDTO
 import com.example.list_currency_crypto.data.remote.dto.CoinDetailDTO

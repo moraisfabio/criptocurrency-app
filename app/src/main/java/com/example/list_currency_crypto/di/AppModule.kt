@@ -1,7 +1,7 @@
 package com.example.list_currency_crypto.di
 
 import com.example.list_currency_crypto.common.Constants
-import com.example.list_currency_crypto.data.remote.dto.CoinPaprikaApi
+import com.example.list_currency_crypto.data.remote.CoinPaprikaApi
 import com.example.list_currency_crypto.data.repository.CoinRepositoryImpl
 import com.example.list_currency_crypto.domain.repository.CoinRepository
 import dagger.Module

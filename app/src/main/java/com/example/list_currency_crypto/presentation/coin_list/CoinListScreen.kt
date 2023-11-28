@@ -18,7 +18,6 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.example.list_currency_crypto.presentation.Screen
 import com.example.list_currency_crypto.presentation.coin_list.components.CoinListItem
-import com.example.list_currency_crypto.presentation.coin_list.CoinListViewModel
 
 @Composable
 fun CoinListScreen(

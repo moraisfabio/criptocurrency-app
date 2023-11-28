@@ -1,4 +1,4 @@
-package com.example.list_currency_crypto.data.remote.dto
+package com.example.list_currency_crypto.data.remote
 
 import com.example.list_currency_crypto.data.remote.dto.CoinDTO
 import com.example.list_currency_crypto.data.remote.dto.CoinDetailDTO
