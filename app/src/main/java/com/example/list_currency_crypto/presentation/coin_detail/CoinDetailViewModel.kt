@@ -23,9 +23,9 @@ class CoinDetailViewModel @Inject constructor(
     val state: State<CoinDetailState> = _state
 
     init {
-        safeStateHandle.get<String>(Constants.PARAM_COIN_ID)?.let { coinId -> {
+        safeStateHandle.get<String>(Constants.PARAM_COIN_ID)?.let { coinId ->
             getCoin(coinId)
-        } }
+        }
     }
     private fun getCoin(coinId: String) {
         getCoinUseCase(coinId).onEach { result  ->
@@ -38,6 +38,8 @@ class CoinDetailViewModel @Inject constructor(
                 }
                 is Resource.Loading -> {
                     _state.value = CoinDetailState(isLoading = true)
+                } else -> {
+                   _state.value = CoinDetailState(error = "")
                 }
             }
         }.launchIn(viewModelScope)
